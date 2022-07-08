@@ -8,27 +8,22 @@ object tuteQ2 {
         var g = 4.0f;
         var k = 4.3f;
 
-        println(MMDecrement(b) * a + c * DecrementMM(d));
-        println(IncrementPP(a));
+        b = b - 1;
+        println(b * a + c * d);
+        d = d - 1;
+
+        println(a);
+        a = a + 1;
+
         println (-2 * ( g - k ) + c);
-        println (IncrementPP(c));
-        println (PPIncrement(c)*IncrementPP(a));
 
+        println (c);
+        c = c + 1;
+
+        c = c + 1;
+        println (c*a);
+        a = a + 1;
 
     }
 
-
-    def PPIncrement(value:Int): Int = {
-        return value+1;
-    }
-    def MMDecrement(value:Int): Int = {
-        return value-1;
-    }
-
-    def IncrementPP(value:Int): Int = {
-        return PPIncrement(value)-1;
-    }
-    def DecrementMM(value:Int): Int = {
-        return MMDecrement(value)+1;
-    }
 }

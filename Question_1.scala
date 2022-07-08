@@ -10,11 +10,9 @@ object tuteQ1 {
         println(k + 12 * m);
         println(m/j);
         println(n%j);
-        println(f + 10*5 +g); 
-        println(PPIncrement(i)*n);
-    }
-
-    def PPIncrement(value:Int): Int = {
-        return value+1;
+        println(f + 10*5 +g);
+        
+        i = i + 1;
+        println(i*n);
     }
 }
